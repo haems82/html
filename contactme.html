@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+    <head>
+    <meta charset="UTF-8">
+		<title>Contact Me</title>
+		
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+ 		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+		
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+    
+    $(function(){
+      $(".name").focus();
+
+
+      $('#relationship').change(function() {
+            if($(this).val()=='Single'){
+                 $('#spouse_name').attr('disabled', true);
+            }
+            else { 
+                 $('#spouse_name').attr('disabled', false);
+            }
+      });
+
+
+      $('#refer').change(function() {
+            if($(this).val()=='Other'){
+                 $('#other').fadeIn();
+          
+            }
+            else { 
+                 $('#other').fadeOut();
+            }
+      });
+
+
+      $('#register').validate();
+  
+     });
+</script>
+
+	</head>
+ 		
+
+	<body>
+		<!--global header-->
+	 	 <header id="header">
+        	<div class="m-header__logo">
+        		<a href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+         	</div><div class="m-header__menu-wrapper ">
+                <ul class="m-header__menu">
+                    <li><a href="aboutme.html"> About Heather </a></li>
+                    <li><a href="myworks.html"> My Works </a></li>
+                    <li><a href="experience.html"> Education & Experience </a></li>
+                    <li><a href="contactme.html"> Contact Me </a></li>
+                 </ul>
+            </div>
+        </header>  
+
+		<!--main content-->
+			<div class="c-wrapper">
+			<div class="c-container">
+			    <div class="c-container__contents">
+		            <h1>Contact Me</h1> 
+		           	
+		           	 <form action="register" method="post" name="register" id="register">
+        <p>
+            <label for="name" class="label">Name:</label>
+            <input type="text" name="name" id="name" class="required name" />
+        </p>
+        
+
+        <p>
+            <label for="email" class="label">Email:</label>
+            <input type="text" name="email required" id="email"  class="required"  title="Please type your email here."/>
+
+        </p>
+        
+        <p>
+            <label for="refer" class="label">How did you hear about me?</label>
+
+            <select name="refer" id="refer">
+              <option value="">Select One</option>
+              <option value="Google">Google</option>
+              <option value="Friend">LinkIn</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Other">Other</option>
+            </select>
+        </p>
+        <p id="other">
+            <label for="referOther" class="label">Other </label>
+            <input type="text" name="referOther" id="referOther"/>
+        </p>
+        <p>
+
+            <label for="comments" class="label" >Message: </label>
+            <textarea name="comments" rows="4" id="comments" class="required"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" id="submit" value="Submit" />
+        </p>
+    </form>
+		               
+		        </div>
+    		</div>
+			</div>
+
+
+        <!--global footer navigation-->
+	<div class="m-footer__menu-wrapper ">
+                <ul class="m-footer__menu">
+                   <li><a href="aboutme.html"> About Heather </a></li>
+                   <li><a href="myworks.html"> My Works </a></li>
+                   <li><a href="experience.html"> Education & Experience </a></li>
+                   <li><a href="contactme.html"> Contact Me </a></li>
+                 </ul>
+    </div>
+<footer>
+	  2015 @ Copyright Heather Yoo    
+</footer>
+ 
+</body>
+</html>

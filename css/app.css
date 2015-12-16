@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+/* CSS Document */
+
+/*
+======================================================================================
+*Global TOC
+
+* Tag-level selectors 
+* Other tags
+* ID and Class selectors
+	*Major IDs
+	*Major Classes
+* Footer
+======================================================================================
+*/
+
+/*Global*/
+
+/* Tag-level selectors */
+body{ font-family: 'Open Sans', sans-serif; border: none; margin: 0; font-weight: 300; }
+
+h1 {font-size: 35px; text-align: center;}
+
+/* other tags */
+
+a { color: black;}
+
+a:link {text-decoration: none;}
+
+a:visited {text-decoration: none;}
+
+a:hover {text-decoration: underline;}
+
+a:active {text-decoration: underline;}
+
+
+/* ====ID and Class selector==== */
+
+/* Major IDs */
+#header { width: 1000px; margin: 0 auto 0; }
+
+
+/* Major Classes */
+.m-header__logo {display: inline-block; width: 25%; vertical-align: top;}
+.m-header__menu-wrapper { display: inline-block; width: 75%;  vertical-align: top; }
+.m-header__menu { text-align: right; }
+.m-header__menu li { display: inline-block; margin-left: 15px;  list-style-type:none; }
+
+.hero {width: 100%;}
+
+.c-wrapper { width: 100%; }
+.c-container { max-width: 1000px; margin: 0 auto; }
+.c-container__contents { padding: 30px 10px 30px; }
+.c-container__contents p {text-align: center;}
+
+.m-footer__menu-wrapper { width: 75%; margin: 0 auto; }
+.m-footer__menu { text-align: center; }
+.m-footer__menu li { display: inline-block; margin: 0 15px 0;  list-style-type:none; }
+.m-footer__menu li a {color: #808080;}
+
+/* Footer */
+footer {text-align:center; color: #A9A9A9;}
+
+
+/*============= Home Page ============= */
+
+.c-home-hero { background: url('../img/hero.png') center top; text-align: center; color: white; padding: 130px 0 130px;  margin-bottom: 30px; }
+.c-home-hero__title { font-size: 80px; margin-bottom: 30px; } 
+.btn {  border: 1px solid white; padding: 10px 20px; font-size: 18px; color: white;}
+
+.btn:hover { border-color: white; background: white; color: #60e4d3; text-decoration: none; }
+
+/*=============About Me ============= */
+
+/*=============Experience =============*/
+.ui-accordion .ui-accordion-header { background: #60e4d3; color: white; border-color: #60e4d3; }
+.ui-accordion .ui-accordion-content { border-color: #60e4d3; }
+
+
+/*=============Education =============*/
+
+#tab1, #tab2 { padding: 5em 5em 8em;  }
+.ui-widget-header {font-weight: normal;}
+
+
+
+/*=============My Works =============*/
+
+#container { width: 500px; height: 500px; overflow: hidden; margin: 0 auto 30px;}
+.cycle-slideshow {width: 100%;}
+.cycle-slideshow img {width: 100%;}
+#thumbnails { width: 520px; margin: 0 auto;}
+
+/*=============FAQs =============*/
+#container { text-align: center;}
+#container h3 {cursor:pointer;}
+
+/*=============Contact Me =============*/
+#other { display: none; } 
+.label { font-weight:bold;} 
+.submit {color:#60e4d3;}
+
+
+
