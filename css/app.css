@@ -6,7 +6,7 @@
 ======================================================================================
 *Global TOC
 
-* Tag-level selectors 
+* Tag-level selectors
 * Other tags
 * ID and Class selectors
 	*Major IDs
@@ -66,7 +66,7 @@ footer {text-align:center; color: #A9A9A9;}
 /*============= Home Page ============= */
 
 .c-home-hero { background: url('../img/hero.png') center top; text-align: center; color: white; padding: 130px 0 130px;  margin-bottom: 30px; }
-.c-home-hero__title { font-size: 80px; margin-bottom: 30px; } 
+.c-home-hero__title { font-size: 80px; margin-bottom: 30px; }
 .btn {  border: 1px solid white; padding: 10px 20px; font-size: 18px; color: white;}
 
 .btn:hover { border-color: white; background: white; color: #60e4d3; text-decoration: none; }
@@ -78,13 +78,6 @@ footer {text-align:center; color: #A9A9A9;}
 .ui-accordion .ui-accordion-content { border-color: #60e4d3; }
 
 
-/*=============Education =============*/
-
-#tab1, #tab2 { padding: 5em 5em 8em;  }
-.ui-widget-header {font-weight: normal;}
-
-
-
 /*=============My Works =============*/
 
 #container { width: 500px; height: 500px; overflow: hidden; margin: 0 auto 30px;}
@@ -92,14 +85,8 @@ footer {text-align:center; color: #A9A9A9;}
 .cycle-slideshow img {width: 100%;}
 #thumbnails { width: 520px; margin: 0 auto;}
 
-/*=============FAQs =============*/
-#container { text-align: center;}
-#container h3 {cursor:pointer;}
 
 /*=============Contact Me =============*/
-#other { display: none; } 
-.label { font-weight:bold;} 
+#other { display: none; }
+.label { font-weight:bold;}
 .submit {color:#60e4d3;}
-
-
-
